@@ -70,7 +70,7 @@ Once you have Jekyll up-and-running, there are only a few steps needed to make t
 
 ## How to create a new collection:
 - Look to existing collection and just copy paste everything.
-- Be caution about your html class definition, if you change the name of the class="class_name", the renering will probably not be defined in the assets/main.css file.
+- Be caution about your html class definition, if you change the name of the class="class_name", the rendering will probably not be defined in the assets/main.css file.
 
 <!-- LICENSE -->
 
@@ -78,7 +78,6 @@ Once you have Jekyll up-and-running, there are only a few steps needed to make t
 
 Distributed under the MIT License. You can use this project however you see fit without needing to give attribution.
 
-See `LICENSE` for more information.
 
 
 
