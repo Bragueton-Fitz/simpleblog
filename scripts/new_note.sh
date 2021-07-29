@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # specify path of your install here.
-jekyll_path=/home/fitz/Git_repo_P/simpleblog
+jekyll_path=$HOME/Git_repo_P/simpleblog
 
 notes_path="$jekyll_path/_posts/notes/"
 date=$(date '+%Y-%m-%d')
