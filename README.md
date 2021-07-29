@@ -1,5 +1,4 @@
 
-
 ## About
 
 **Simple Blog** is a responsive, sidebar theme for the popular static site generator Jekyll that only uses the minimal [**Pure.css** framework](https://github.com/pure-css/pure). It is originally based on [Purelog Jekyll theme](https://github.com/brennanbrown/purelog).
@@ -61,7 +60,7 @@ Once you have Jekyll up-and-running, there are only a few steps needed to make t
 4. Create new_yourCollection.sh file in order to accelarete the creation of new post.
 5. Start writing posts in your collections.
 
-# How to change website name:
+## How to change website name:
 - In _config.yml: change << baseurl : "/Mysite" >> by << baseurl : "/Newname" >> 
 - In script/launch.sh: change << google-chrome --app=http://127.0.0.1:4000/Mysite/index
  >> by << google-chrome --app=http://127.0.0.1:4000/Newname/index
@@ -70,7 +69,7 @@ Once you have Jekyll up-and-running, there are only a few steps needed to make t
 >>
 
 
-# How to create a new collection:
+## How to create a new collection:
 - Look to existing collection and just copy paste everything.
 - Be caution about your html class definition, if you change the name of the class="class_name", the renering will probably not be defined in the assets/main.css file.
 
