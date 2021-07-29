@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # specify path of your install here.
-jekyll_path=/home/fitz/Git_repo_P/simpleblog
+jekyll_path=$HOME/Git_repo_P/simpleblog
 
 # These 2 lines will ensure that the jekyll server will be killed when you close google-chrome.
 trap "exit" INT TERM ERR
