@@ -24,7 +24,7 @@ Read the [syntax](https://kramdown.gettalong.org/syntax.html) here.
 
 ## Instructions
 
-1. Clone this repository and change into your new directory.
+1. Clone this repository and cd into your new directory.
 
 
 2. Install the jekyll and bundler gems.
