@@ -1,0 +1,28 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Jekyll">
+    <link rel="license" href="LICENSE">
+
+    <meta name="application-name" content="{{ site.title }}">
+    <meta name="theme-color" content="{{ site.theme_color }}">
+    <link rel="archives" href="{{site.url}}/archives/">
+
+    <meta name="robots" content="index,follow"> <!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow"><!-- Google Specific    -->
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <link rel="stylesheet" href={{ "/assets/main.css" | relative_url }}>
+    <link rel="stylesheet" href={{ "/assets/code.css" | relative_url }}>
+    <script src="https://kit.fontawesome.com/e9dddf84a6.js" crossorigin="anonymous"></script>
+	<script src="{{ site.baseurl }}/assets/plotly-2.3.0.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico" >
+    {%- seo -%}
+    {%- feed_meta -%}
+    {%- if site.google_analytics -%}
+    {%- include google-analytics.html -%}
+    {%- endif -%}
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
+</head>

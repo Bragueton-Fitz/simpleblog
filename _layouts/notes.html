@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{{ content }}
+
+
+
+<div class="notes">
+    <h2 class="content-subhead">Recent Notes</h2>
+
+    {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+
+    {% for note in site.categories.notes %}
+    <section class="post">
+        <header class="note-header">
+            <h2 class="post-title">
+                <a href="{{ note.url | relative_url }}">
+                    {{ note.title | escape }}
+                </a>
+            </h2>
+
+            <p class="post-meta">
+                Posté le 
+                {% include date.html date=post.date %}
+                |
+                <br class="sm-display"/>
+                Sous
+                <span>
+                    {% for tag in note.tags %}
+                        <a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>
+                    {% endfor %}
+                </span>
+            </p>
+        </header>
+
+        <div class="journal-description">
+            <p>
+                <em>{{ note.content | strip_html | escape | truncate: 300}}</em>
+            </p>
+        </div>
+    </section>
+    {%- endfor -%}
+</div>
+
+
+<br />

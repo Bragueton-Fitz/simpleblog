@@ -1,0 +1,18 @@
+<p>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% include date.html date=page.date %}
+    </time>
+    {%- if page.modified_date -%}
+    ~
+    {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+    <time datetime="{{ mdate }}" itemprop="dateModified">
+        {% include date.html date=mdate %}
+    </time>
+    {%- endif -%}
+    
+    &#8239;|&#8239; &#8239;
+    {%- for tag in page.tags -%}
+    <a href="{{ site.baseurl }}/tags/#{{ tag }}"> {{ tag }}</a> &#8239;
+    {%- endfor -%} 
+</p>
